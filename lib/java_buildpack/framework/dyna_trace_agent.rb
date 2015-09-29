@@ -59,7 +59,7 @@ module JavaBuildpack
       end
 
       def agent_name
-        "#{@application.details['application_name']}_#{profile_name}"
+        @environment['dynatrace_agent_name'] ? "@environment['dynatrace_agent_name'] : "#{@application.details['application_name']}_#{profile_name}"
       end
 
       def architecture
