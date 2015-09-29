@@ -59,7 +59,7 @@ module JavaBuildpack
       end
 
       def agent_name
-        "{@environment['DYNATRACE_AGENT_NAME']}"
+        ENV['DYNATRACE_AGENT_NAME']
 #? "@environment['dynatrace_agent_name'] : "#{@application.details['application_name']}_#{profile_name}"
       end
 
