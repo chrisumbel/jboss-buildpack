@@ -15,5 +15,5 @@
 
 # Configuration for the Dynatrace framework
 ---
-version: 6.1.0_+
-repository_root: ""
+version: 6.2.0_+
+repository_root: "{default.repository.root}/dynatrace/"
